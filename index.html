@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+      integrity="sha256-BtbhCIbtfeVWGsqxk1vOHEYXS6qcvQvLMZqjtpWUEx8="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Speed typing</title>
+  </head>
+  <body>
+    <header class="header bg-secondary text-center p-1 text-light">
+      <h2>Speed Typing</h2>
+    </header>
+    <article class="bg-dark text-center text-light">
+      <div class="container-small">
+        <p class="pt-4 pb-2">
+          Type The Given Word Within
+          <span class="text-success">5</span> Seconds
+        </p>
+        <h1 id="word" class="pb-4"></h1>
+        <input
+          type="text"
+          id="type-word"
+          class="form-control form-control-sm"
+          placeholder="Start typing..."
+        />
+        <div class="p-2 font-medium result-info">
+          <strong class="text-success" id="correct-answer">Correct!!!</strong>
+          <strong id="game-over" class="text-danger">Game Over!!!</strong>
+          <i id="reset" class="fas fa-undo ml-3"></i>
+        </div>
+        <div class="row font-medium">
+          <div class="col text-center">
+            Time Left: <span id="seconds"></span>
+          </div>
+          <div class="col text-center">
+            Score: <span id="score-board"></span>
+          </div>
+        </div>
+        <div class="bg-secondary mt-3 p-2">
+          <h4>Instructions</h4>
+          <p class="pt-1 font-small">
+            Type each word in the given amount of seconds to score. To reset the
+            game, click the refresh icon. Your score will reset
+          </p>
+        </div>
+      </div>
+    </article>
+    <script src="assets/model.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

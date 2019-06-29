@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container-small {
+  max-width: 400px;
+  margin: auto;
+}
+.font-medium {
+  font-size: 1.2rem;
+}
+.font-small {
+  font-size: 0.8rem;
+}
+article {
+  flex: 1;
+}
+.result-info {
+  min-height: 50px;
+}
+i.fas {
+  cursor: pointer;
+}
